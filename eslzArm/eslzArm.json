@@ -667,12 +667,12 @@
         "mgmtGroups": {
             "eslzRoot": "[parameters('enterpriseScaleCompanyPrefix')]",
             "platform": "[concat('mg-',parameters('enterpriseScaleCompanyPrefix'), '-', 'platform')]",
-            "management": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-', 'management')]",
-            "connectivity": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-', 'connectivity')]",
-            "identity": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-', 'identity')]",
-            "lzs": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-', 'landingzones')]",
-            "corp": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-', 'corp')]",
-            "online": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-', 'online')]"
+            "management": "[concat('mg-',parameters('enterpriseScaleCompanyPrefix'), '-', 'management')]",
+            "connectivity": "[concat('mg-',parameters('enterpriseScaleCompanyPrefix'), '-', 'connectivity')]",
+            "identity": "[concat('mg-',parameters('enterpriseScaleCompanyPrefix'), '-', 'identity')]",
+            "lzs": "[concat('mg-',parameters('enterpriseScaleCompanyPrefix'), '-', 'landingzones')]",
+            "corp": "[concat('mg-',parameters('enterpriseScaleCompanyPrefix'), '-', 'corp')]",
+            "online": "[concat('mg-',parameters('enterpriseScaleCompanyPrefix'), '-', 'online')]"
         },
         // Declaring scopes that will be used for optional deployments, such as platform components (monitoring, networking, identity), policy assignments, subscription placement etc.
         "scopes": {
@@ -823,14 +823,15 @@
             "privateDnsZonesLiteDeploymentName": "[take(concat('alz-PrivDNSLite', variables('deploymentSuffix')), 35)]"
         },
         // Declaring deterministic names for Resource Groups that will be created for platform resources
+        "platformEnviroNames":["Test"],
         "platformRgNames": {
-            "mgmtRg": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-mgmt')]",
-            "azOpsRg": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-azops')]",
-            "connectivityRg": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-vnethub-', parameters('connectivityLocation'))]",
-            "ddosRg": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-ddos')]",
-            "privateDnsRg": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-privatedns')]",
-            "identityVnetRg": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-vnet-', parameters('connectivityLocation'))]",
-            "lzVnetRg": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-vnet-', parameters('connectivityLocation'))]"
+            "mgmtRg": "[concat('rg-',parameters('enterpriseScaleCompanyPrefix'), variables('platformEnviroNames'), '-mgmt')]",
+            "azOpsRg": "[concat('rg-',parameters('enterpriseScaleCompanyPrefix'), '-azops')]",
+            "connectivityRg": "[concat('rg-', parameters('enterpriseScaleCompanyPrefix'), variables('platformEnviroNames'),'-vnethub-', parameters('connectivityLocation'))]",
+            "ddosRg": "[concat('rg-',parameters('enterpriseScaleCompanyPrefix'), variables('platformEnviroNames'), '-ddos')]",
+            "privateDnsRg": "[concat('rg-',parameters('enterpriseScaleCompanyPrefix'), variables('platformEnviroNames'), '-privatedns')]",
+            "identityVnetRg": "[concat('rg-',parameters('enterpriseScaleCompanyPrefix'), variables('platformEnviroNames'), '-vnet-', parameters('connectivityLocation'))]",
+            "lzVnetRg": "[concat('rg-',parameters('enterpriseScaleCompanyPrefix'), variables('platformEnviroNames'), '-vnet-', parameters('connectivityLocation'))]"
         },
         // Declaring deterministic names for platform resources that will be created
         "platformResourceNames": {
