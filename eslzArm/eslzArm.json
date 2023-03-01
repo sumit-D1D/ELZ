@@ -823,8 +823,9 @@
             "privateDnsZonesLiteDeploymentName": "[take(concat('alz-PrivDNSLite', variables('deploymentSuffix')), 35)]"
         },
         // Declaring deterministic names for Resource Groups that will be created for platform resources
+        "platformEnviroNames":["Test"],
         "platformRgNames": {
-            "mgmtRg": "[concat('rg-', parameters('enterpriseScaleCompanyPrefix'), '-mgmt')]",
+            "mgmtRg": "[take(concat('rg-', parameters('enterpriseScaleCompanyPrefix'), variables('platformEnviroNames'), '-mgmt'), 64)]",
             "azOpsRg": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-azops')]",
             "connectivityRg": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-vnethub-', parameters('connectivityLocation'))]",
             "ddosRg": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-ddos')]",
