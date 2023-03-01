@@ -824,13 +824,13 @@
         },
         // Declaring deterministic names for Resource Groups that will be created for platform resources
         "platformRgNames": {
-            "mgmtRg": "[concat('rg-',parameters('enterpriseScaleCompanyPrefix'), 'Test', '-mgmt')]",
-            "azOpsRg": "[concat('rg-',parameters('enterpriseScaleCompanyPrefix'), 'Test', '-azops')]",
-            "connectivityRg": "[concat('rg-',parameters('enterpriseScaleCompanyPrefix'), 'Test', '-vnethub-', parameters('connectivityLocation'))]",
-            "ddosRg": "[concat('rg-',parameters('enterpriseScaleCompanyPrefix'), 'Test', '-ddos')]",
-            "privateDnsRg": "[concat('rg-',parameters('enterpriseScaleCompanyPrefix'), 'Test', '-privatedns')]",
-            "identityVnetRg": "[concat('rg-',parameters('enterpriseScaleCompanyPrefix'), 'Test', '-vnet-', parameters('connectivityLocation'))]",
-            "lzVnetRg": "[concat('rg-',parameters('enterpriseScaleCompanyPrefix'), 'Test', '-vnet-', parameters('connectivityLocation'))]"
+            "mgmtRg": "[concat('rg-',parameters('enterpriseScaleCompanyPrefix'), 'Test-', '-mgmt')]",
+            "azOpsRg": "[concat('rg-',parameters('enterpriseScaleCompanyPrefix'), 'Test-', '-azops')]",
+            "connectivityRg": "[concat('rg-',parameters('enterpriseScaleCompanyPrefix'), 'Test-', '-vnethub-', parameters('connectivityLocation'))]",
+            "ddosRg": "[concat('rg-',parameters('enterpriseScaleCompanyPrefix'), 'Test-', '-ddos')]",
+            "privateDnsRg": "[concat('rg-',parameters('enterpriseScaleCompanyPrefix'), 'Test-', '-privatedns')]",
+            "identityVnetRg": "[concat('rg-',parameters('enterpriseScaleCompanyPrefix'), 'Test-', '-vnet-', parameters('connectivityLocation'))]",
+            "lzVnetRg": "[concat('rg-',parameters('enterpriseScaleCompanyPrefix'), 'Test-', '-vnet-', parameters('connectivityLocation'))]"
         },
         // Declaring deterministic names for platform resources that will be created
         "platformResourceNames": {
