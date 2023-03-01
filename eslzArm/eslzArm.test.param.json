@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "enterpriseScaleCompanyPrefix": {
-      "value": "myservicetas"
+      "value": "myservtas"
     },
     "singlePlatformSubscriptionId": {
       "value": "8abbe631-e5e7-48b9-ab84-535e4dbe537e"
