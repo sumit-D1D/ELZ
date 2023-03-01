@@ -823,15 +823,14 @@
             "privateDnsZonesLiteDeploymentName": "[take(concat('alz-PrivDNSLite', variables('deploymentSuffix')), 35)]"
         },
         // Declaring deterministic names for Resource Groups that will be created for platform resources
-        "platformEnviroNames":["Test"],
         "platformRgNames": {
-            "mgmtRg": "[concat('rg-',parameters('enterpriseScaleCompanyPrefix'), variables('platformEnviroNames'), '-mgmt')]",
+            "mgmtRg": "[concat('rg-',parameters('enterpriseScaleCompanyPrefix'), '-mgmt')]",
             "azOpsRg": "[concat('rg-',parameters('enterpriseScaleCompanyPrefix'), '-azops')]",
-            "connectivityRg": "[concat('rg-', parameters('enterpriseScaleCompanyPrefix'), variables('platformEnviroNames'),'-vnethub-', parameters('connectivityLocation'))]",
-            "ddosRg": "[concat('rg-',parameters('enterpriseScaleCompanyPrefix'), variables('platformEnviroNames'), '-ddos')]",
-            "privateDnsRg": "[concat('rg-',parameters('enterpriseScaleCompanyPrefix'), variables('platformEnviroNames'), '-privatedns')]",
-            "identityVnetRg": "[concat('rg-',parameters('enterpriseScaleCompanyPrefix'), variables('platformEnviroNames'), '-vnet-', parameters('connectivityLocation'))]",
-            "lzVnetRg": "[concat('rg-',parameters('enterpriseScaleCompanyPrefix'), variables('platformEnviroNames'), '-vnet-', parameters('connectivityLocation'))]"
+            "connectivityRg": "[concat('rg-', parameters('enterpriseScaleCompanyPrefix'), '-vnethub-', parameters('connectivityLocation'))]",
+            "ddosRg": "[concat('rg-',parameters('enterpriseScaleCompanyPrefix'), '-ddos')]",
+            "privateDnsRg": "[concat('rg-',parameters('enterpriseScaleCompanyPrefix'), '-privatedns')]",
+            "identityVnetRg": "[concat('rg-',parameters('enterpriseScaleCompanyPrefix'), '-vnet-', parameters('connectivityLocation'))]",
+            "lzVnetRg": "[concat('rg-',parameters('enterpriseScaleCompanyPrefix'), '-vnet-', parameters('connectivityLocation'))]"
         },
         // Declaring deterministic names for platform resources that will be created
         "platformResourceNames": {
