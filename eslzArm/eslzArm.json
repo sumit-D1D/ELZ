@@ -826,12 +826,12 @@
         "platformEnviroNames":["Test"],
         "platformRgNames": {
             "mgmtRg": "[take(concat('rg-', parameters('enterpriseScaleCompanyPrefix'), variables('platformEnviroNames'), '-mgmt'), 64)]",
-            "azOpsRg": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-azops')]",
-            "connectivityRg": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-vnethub-', parameters('connectivityLocation'))]",
-            "ddosRg": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-ddos')]",
-            "privateDnsRg": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-privatedns')]",
-            "identityVnetRg": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-vnet-', parameters('connectivityLocation'))]",
-            "lzVnetRg": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-vnet-', parameters('connectivityLocation'))]"
+            "azOpsRg": "[take(concat('rg-', parameters('enterpriseScaleCompanyPrefix'), variables('platformEnviroNames'),'-azops'), 64)]",
+            "connectivityRg": "[take(concat('rg-', parameters('enterpriseScaleCompanyPrefix'), variables('platformEnviroNames'),'-vnethub-', parameters('connectivityLocation')), 64)]",
+            "ddosRg": "[take(concat('rg-',parameters('enterpriseScaleCompanyPrefix'), variables('platformEnviroNames'), '-ddos'), 64)]",
+            "privateDnsRg": "[take(concat('rg-',parameters('enterpriseScaleCompanyPrefix'), '-privatedns'), 64)]",
+            "identityVnetRg": "[take(concat(parameters('enterpriseScaleCompanyPrefix'), variables('platformEnviroNames'), '-vnet-', parameters('connectivityLocation')), 64)]",
+            "lzVnetRg": "[take(concat(parameters('enterpriseScaleCompanyPrefix'), variables('platformEnviroNames'), '-vnet-', parameters('connectivityLocation')), 64)]"
         },
         // Declaring deterministic names for platform resources that will be created
         "platformResourceNames": {
