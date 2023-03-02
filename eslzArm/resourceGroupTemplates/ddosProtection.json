@@ -15,11 +15,15 @@
             }
         }
     },
+    "variables":{
+        "ddosName": "[concat('ddos-', 'Test-', 'aue-', '001')]"
+    },
+
     "resources": [
         {
             "type": "Microsoft.Network/ddosProtectionPlans",
             "apiVersion": "2019-02-01",
-            "name": "[parameters('ddosName')]",
+            "name": "[variables('ddosName')]",
             "location": "[parameters('location')]",
             "properties": {}
         }
