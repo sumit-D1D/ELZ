@@ -827,7 +827,7 @@
             "mgmtRg": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-mgmt')]",
             "azOpsRg": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-azops')]",
             "connectivityRg": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-vnethub-', parameters('connectivityLocation'))]",
-            "ddosRg": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-ddos')]",
+            "ddosRg": "[concat('rg-', 'ddos-', 'Test-', 'aue-', '001')]",
             "privateDnsRg": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-privatedns')]",
             "identityVnetRg": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-vnet-', parameters('connectivityLocation'))]",
             "lzVnetRg": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-vnet-', parameters('connectivityLocation'))]"
