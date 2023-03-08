@@ -664,6 +664,7 @@
     },
     "variables": {
         // Declaring the prescriptive management group structure that will be used in the scope construction
+        "enviroName": "Test",
         "mgmtGroups": {
             "eslzRoot": "[concat(parameters('enterpriseScaleCompanyPrefix'))]",
             "platform": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-', 'platform')]",
@@ -827,16 +828,16 @@
             "mgmtRg": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-mgmt')]",
             "azOpsRg": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-azops')]",
             "connectivityRg": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-vnethub-', parameters('connectivityLocation'))]",
-            "ddosRg": "[concat('rg-', 'ddos-', 'Test-', 'aue-', '001')]",
+            "ddosRg": "[concat('rg-', 'ddos-', variables('enviroName'), '-aue-', '001')]",
             "privateDnsRg": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-privatedns')]",
             "identityVnetRg": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-vnet-', parameters('connectivityLocation'))]",
             "lzVnetRg": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-vnet-', parameters('connectivityLocation'))]"
         },
         // Declaring deterministic names for platform resources that will be created
         "platformResourceNames": {
-            "logAnalyticsWorkspace": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-law')]",
-            "automationAccount": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-aauto')]",
-            "vpnGwName": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-vpngw-', parameters('connectivityLocation'))]",
+            "logAnalyticsWorkspace": "[concat('law-', variables('enviroName'), '-aue-', '001')]",
+            "automationAccount": "[concat('aauto-', variables('enviroName'), '-aue-', '001')]",
+            "vpnGwName": "[concat('vpngw-', variables('enviroName'), '-aue-', '001')]",
             "erGwName": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-ergw-', parameters('connectivityLocation'))]",
             "ddosName": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-ddos-', parameters('connectivityLocation'))]",
             "azFwPolicyName": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-azfwpolicy-', parameters('connectivityLocation'))]",
