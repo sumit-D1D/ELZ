@@ -843,7 +843,7 @@
             "azFwPolicyName": "[concat('azfwpolicy-', variables('enviroName'), '-aue-', '001')]",
             "azFwName": "[concat('fw-', variables('enviroName'), '-aue-', '001')]",
             "azErGwIpName": "[concat('erpip-', variables('enviroName'), '-aue-', '001')]",
-            "hubName": "[concat('hub-', variables('enviroName'), '-aue-', '001')]",
+            "hubName": "[concat('vnet','hub-', variables('enviroName'), '-aue-', '001')]",
             "vwanName": "[concat('vwan-', variables('enviroName'), '-aue-', '001')]",
             "azVpnGwIpName": "[concat('gwpip-', variables('enviroName'), '-aue-', '001')]",
             "azFwIpName": "[concat('fwpip-', variables('enviroName'), '-aue-', '001')]",
