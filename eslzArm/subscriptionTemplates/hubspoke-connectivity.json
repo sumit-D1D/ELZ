@@ -156,7 +156,7 @@
         "enviroName": "Test",
         "vpngwname": "[concat('vpngw-', variables('enviroName'), '-aue-', '001')]",
         "erGwName": "[concat('ergw-', variables('enviroName'), 'aue-', '001')]",
-        "rgName": "[concat('rg-', 'hub-', variables('enviroName'), '-aue-', '001')]",
+        "rgName": "[concat('rg-', 'vnethub-', variables('enviroName'), '-aue-', '001')]",
         "azFwPolicyName": "[concat('azfwpolicy-', variables('enviroName'), '-aue-', '001')]",
         "hubName": "[concat('vnet', 'hub-', variables('enviroName'), '-aue-','001')]",
         "azVpnGwIpName": "[concat(variables('vpngwname'), '-pip')]",
