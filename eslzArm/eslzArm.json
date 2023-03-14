@@ -827,7 +827,7 @@
         "platformRgNames": {
             "mgmtRg": "[concat('rg-','mgmt-', variables('enviroName'), '-aue-','001')]",
             "azOpsRg": "[concat('rg-','azops', variables('enviroName'), '-aue-','001')]",
-            "connectivityRg": "[concat('rg-','vnethub-', variables('enviroName'), '-aue-','001')]",
+            "connectivityRg": "[concat('rg-','hub-', variables('enviroName'), '-aue-','001')]",
             "ddosRg": "[concat('rg-', 'ddos-', variables('enviroName'), '-aue-', '001')]",
             "privateDnsRg": "[concat('rg-', 'privatedns', variables('enviroName'), '-aue-', '001')]",
             "identityVnetRg": "[concat('rg-', 'id-vnet-', variables('enviroName'), '-aue-', '001')]",
