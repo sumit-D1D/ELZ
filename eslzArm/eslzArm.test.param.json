@@ -6,7 +6,7 @@
       "value": "myservtas"
     },
     "singlePlatformSubscriptionId": {
-      "value": "8abbe631-e5e7-48b9-ab84-535e4dbe537e"
+      "value": "510e86ba-1ee0-4af0-9387-a416d7f911d0"
     },
     "telemetryOptOut": {
       "value": "Yes"
@@ -126,13 +126,13 @@
       "value": "Yes"
     },
     "enableVpnGw": {
-      "value": "Yes"
+      "value": "No"
     },
     "gwRegionalOrAz": {
-      "value": "Regional"
+      "value": ""
     },
     "gwRegionalSku": {
-      "value": "VpnGw1"
+      "value": ""
     },
     "gwAzSku": {
       "value": ""
