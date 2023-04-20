@@ -16,7 +16,7 @@
         }
     },
     "variables":{
-        "enviroName": "Test",
+        "enviroName": "Prod",
         "ddosName": "[concat('ddos-', variables('enviroName'), '-aue-', '001')]"
     },
 
