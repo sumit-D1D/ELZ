@@ -93,7 +93,7 @@
         }
     },
     "variables": {
-        "envrioName": "Test",
+        "envrioName": "Prod",
         "vWanName": "[concat('vwan-', variables('envrioName'), '-aue-', '001')]",
         "vpngwname": "[concat('vpngw-', variables('envrioName'), '-aue-', '001')]",
         "erGwName": "[concat('ergw-', variables('envrioName'), '-aue-', '001')]",
