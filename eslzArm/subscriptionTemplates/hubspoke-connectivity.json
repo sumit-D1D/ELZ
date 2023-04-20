@@ -153,7 +153,7 @@
         }
     },
     "variables": {
-        "enviroName": "Test",
+        "enviroName": "Prod",
         "vpngwname": "[concat('vpngw-', variables('enviroName'), '-aue-', '001')]",
         "erGwName": "[concat('ergw-', variables('enviroName'), 'aue-', '001')]",
         "rgName": "[concat('rg-', 'vnethub-', variables('enviroName'), '-aue-', '001')]",
