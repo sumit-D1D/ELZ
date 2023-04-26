@@ -3,10 +3,10 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "enterpriseScaleCompanyPrefix": {
-      "value": "myservtas"
+      "value": "servtas"
     },
     "singlePlatformSubscriptionId": {
-      "value": "510e86ba-1ee0-4af0-9387-a416d7f911d0"
+      "value": null
     },
     "telemetryOptOut": {
       "value": "Yes"
@@ -18,7 +18,7 @@
       "value": "30"
     },
     "managementSubscriptionId": {
-      "value": ""
+      "value": "36be048e-5444-478a-905a-3ce462261ffa"
     },
     "enableAgentHealth": {
       "value": "No"
@@ -48,7 +48,7 @@
       "value": "Yes"
     },
     "emailContactAsc": {
-      "value": "D1d.support@itechnologies.com.au"
+      "value": "d1d.support@itechnologies.com.au"
     },
     "enableAscForServers": {
       "value": "DeployIfNotExists"
@@ -90,31 +90,31 @@
       "value": "No"
     },
     "gitHubUserNameOrOrg": {
-      "value": "No"
+      "value": null
     },
     "repositoryName": {
-      "value": ""
+      "value": null
     },
     "paToken": {
-      "value": ""
+      "value": null
     },
     "principalId": {
-      "value": []
+      "value": null
     },
     "principalSecret": {
-      "value": ""
+      "value": null
     },
     "appId": {
-      "value": ""
+      "value": null
     },
     "azOpsSubscriptionId": {
-      "value": ""
+      "value": "36be048e-5444-478a-905a-3ce462261ffa"
     },
     "connectivitySubscriptionId": {
-      "value": ""
+      "value": "57db710d-004b-436c-ae83-d73bd6075156"
     },
     "addressPrefix": {
-      "value": "10.100.0.0/22"
+      "value": "10.182.64.0/22"
     },
     "connectivityLocation": {
       "value": "australiaeast"
@@ -129,19 +129,19 @@
       "value": "No"
     },
     "gwRegionalOrAz": {
-      "value": ""
+      "value": null
     },
     "gwRegionalSku": {
-      "value": ""
+      "value": null
     },
     "gwAzSku": {
-      "value": ""
+      "value": null
     },
     "vpnGateWayScaleUnit": {
-      "value": "1"
+      "value": null
     },
     "subnetMaskForGw": {
-      "value": "10.100.1.0/26"
+      "value": "10.182.64.0/26"
     },
     "enableErGw": {
       "value": "Yes"
@@ -150,13 +150,13 @@
       "value": "ErGw1AZ"
     },
     "erRegionalSku": {
-      "value": ""
+      "value": null
     },
     "erRegionalOrAz": {
       "value": "Zone"
     },
     "expressRouteScaleUnit": {
-      "value": "1"
+      "value": null
     },
     "enableHub": {
       "value": "vhub"
@@ -178,34 +178,37 @@
       ]
     },
     "subnetMaskForAzFw": {
-      "value": "10.100.0.0/26"
+      "value": "10.182.64.64/26"
     },
     "identitySubscriptionId": {
-      "value": ""
+      "value": null
     },
     "denyRdpForIdentity": {
-      "value": "Yes"
+      "value": null
     },
     "denySubnetWithoutNsgForIdentity": {
-      "value": "Yes"
+      "value": null
     },
     "denyPipForIdentity": {
-      "value": "No"
+      "value": null
     },
     "enableVmBackupForIdentity": {
-      "value": "Yes"
+      "value": null
     },
     "identityAddressPrefix": {
-      "value": ""
+      "value": null
     },
     "corpConnectedLzSubscriptionId": {
-      "value": []
+      "value": null
     },
     "corpLzSubscriptionId": {
       "value": []
     },
     "onlineLzSubscriptionId": {
-      "value": []
+      "value": [
+        "c2b3b702-3cbd-4fee-a29f-53efba4895fa",
+        "67065fbc-f8bb-4645-a0d6-c8461c9cb2da"
+      ]
     },
     "enableLzDdoS": {
       "value": "No"
@@ -268,10 +271,10 @@
       "value": "Yes"
     },
     "delayCount": {
-      "value": 30
+      "value": null
     },
     "currentDateTimeUtcNow": {
-      "value": "[utcNow()]"
+      "value": null
     }
   }
 }
