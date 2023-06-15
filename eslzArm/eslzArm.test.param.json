@@ -36,13 +36,13 @@
       "value": "No"
     },
     "enableSqlAssessment": {
-      "value": "No"
+      "value": "Yes"
     },
     "enableSqlVulnerabilityAssessment": {
-      "value": "No"
+      "value": "Yes"
     },
     "enableSqlAdvancedThreatProtection": {
-      "value": "No"
+      "value": "Yes"
     },
     "enableAsc": {
       "value": "Yes"
@@ -99,7 +99,7 @@
       "value": null
     },
     "principalId": {
-      "value": null
+      "value": []
     },
     "principalSecret": {
       "value": null
@@ -120,7 +120,7 @@
       "value": "australiaeast"
     },
     "enableDdoS": {
-      "value": "Yes"
+      "value": "No"
     },
     "enablePrivateDnsZones": {
       "value": "Yes"
@@ -138,10 +138,10 @@
       "value": null
     },
     "vpnGateWayScaleUnit": {
-      "value": null
+      "value": "1"
     },
     "subnetMaskForGw": {
-      "value": "10.182.64.0/26"
+      "value": null
     },
     "enableErGw": {
       "value": "Yes"
@@ -156,7 +156,7 @@
       "value": "Zone"
     },
     "expressRouteScaleUnit": {
-      "value": null
+      "value": "1"
     },
     "enableHub": {
       "value": "vhub"
@@ -184,22 +184,22 @@
       "value": null
     },
     "denyRdpForIdentity": {
-      "value": null
+      "value": "No"
     },
     "denySubnetWithoutNsgForIdentity": {
-      "value": null
+      "value": "No"
     },
     "denyPipForIdentity": {
-      "value": null
+      "value": "No"
     },
     "enableVmBackupForIdentity": {
-      "value": null
+      "value": "No"
     },
     "identityAddressPrefix": {
       "value": null
     },
     "corpConnectedLzSubscriptionId": {
-      "value": null
+      "value": []
     },
     "corpLzSubscriptionId": {
       "value": []
@@ -271,10 +271,10 @@
       "value": "Yes"
     },
     "delayCount": {
-      "value": null
+      "value": 30
     },
     "currentDateTimeUtcNow": {
-      "value": null
+      "value": "[utcNow()]"
     }
   }
 }
