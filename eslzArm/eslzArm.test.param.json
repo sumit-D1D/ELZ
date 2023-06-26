@@ -99,7 +99,7 @@
       "value": null
     },
     "principalId": {
-      "value": []
+      "value": null
     },
     "principalSecret": {
       "value": null
@@ -120,7 +120,7 @@
       "value": "australiaeast"
     },
     "enableDdoS": {
-      "value": "No"
+      "value": "Yes"
     },
     "enablePrivateDnsZones": {
       "value": "Yes"
@@ -138,10 +138,10 @@
       "value": null
     },
     "vpnGateWayScaleUnit": {
-      "value": "1"
+      "value": null
     },
     "subnetMaskForGw": {
-      "value": null
+      "value": "10.182.64.0/26"
     },
     "enableErGw": {
       "value": "Yes"
@@ -156,7 +156,7 @@
       "value": "Zone"
     },
     "expressRouteScaleUnit": {
-      "value": "1"
+      "value": null
     },
     "enableHub": {
       "value": "vhub"
@@ -184,22 +184,22 @@
       "value": null
     },
     "denyRdpForIdentity": {
-      "value": "No"
+      "value": null
     },
     "denySubnetWithoutNsgForIdentity": {
-      "value": "No"
+      "value": null
     },
     "denyPipForIdentity": {
-      "value": "No"
+      "value": null
     },
     "enableVmBackupForIdentity": {
-      "value": "No"
+      "value": null
     },
     "identityAddressPrefix": {
       "value": null
     },
     "corpConnectedLzSubscriptionId": {
-      "value": []
+      "value": null
     },
     "corpLzSubscriptionId": {
       "value": []
@@ -271,10 +271,10 @@
       "value": "Yes"
     },
     "delayCount": {
-      "value": 30
+      "value": null
     },
     "currentDateTimeUtcNow": {
-      "value": "[utcNow()]"
+      "value": null
     }
   }
 }
