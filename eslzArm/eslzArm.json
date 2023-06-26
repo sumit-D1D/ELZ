@@ -664,7 +664,7 @@
     },
     "variables": {
         // Declaring the prescriptive management group structure that will be used in the scope construction
-        "enviroName": "Prod",
+        "enviroName": "prod",
         "mgmtGroups": {
             "eslzRoot": "[concat(parameters('enterpriseScaleCompanyPrefix'))]",
             "platform": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-', 'platform')]",
@@ -827,7 +827,7 @@
         "platformRgNames": {
             "mgmtRg": "[concat('rg-','mgmt-', variables('enviroName'), '-aue-','001')]",
             "azOpsRg": "[concat('rg-','azops', variables('enviroName'), '-aue-','001')]",
-            "connectivityRg": "[concat('rg-','vnethub-', variables('enviroName'), '-aue-','001')]",
+            "connectivityRg": "[concat('rg-','hub-', variables('enviroName'), '-aue-','001')]",
             "ddosRg": "[concat('rg-', 'ddos-', variables('enviroName'), '-aue-', '001')]",
             "privateDnsRg": "[concat('rg-', 'privatedns-', variables('enviroName'), '-aue-', '001')]",
             "identityVnetRg": "[concat('rg-', 'id-vnet-', variables('enviroName'), '-aue-', '001')]",
@@ -835,19 +835,19 @@
         },
         // Declaring deterministic names for platform resources that will be created
         "platformResourceNames": {
-            "logAnalyticsWorkspace": "[concat('law-', variables('enviroName'), '-aue-', '001')]",
-            "automationAccount": "[concat('aauto-', variables('enviroName'), '-aue-', '001')]",
-            "vpnGwName": "[concat('vpngw-', variables('enviroName'), '-aue-', '001')]",
-            "erGwName": "[concat('ergw-', variables('enviroName'), '-aue-', '001')]",
+            "logAnalyticsWorkspace": "[concat('log-', variables('enviroName'), '-aue-', '001')]",
+            "automationAccount": "[concat('aa-', variables('enviroName'), '-aue-', '001')]",
+            "vpnGwName": "[concat('vgw-','vpn-', variables('enviroName'), '-aue-', '001')]",
+            "erGwName": "[concat('vgw-','er-', variables('enviroName'), '-aue-', '001')]",
             "ddosName": "[concat('ddos-', variables('enviroName'), '-aue-', '001')]",
-            "azFwPolicyName": "[concat('azfwpolicy-', variables('enviroName'), '-aue-', '001')]",
-            "azFwName": "[concat('fw-', variables('enviroName'), '-aue-', '001')]",
-            "azErGwIpName": "[concat('erpip-', variables('enviroName'), '-aue-', '001')]",
-            "hubName": "[concat('vnet','hub-', variables('enviroName'), '-aue-', '001')]",
+            "azFwPolicyName": "[concat('afwp-', variables('enviroName'), '-aue-', '001')]",
+            "azFwName": "[concat('afw-', variables('enviroName'), '-aue-', '001')]",
+            "azErGwIpName": "[concat('pip-','vgw-', variables('enviroName'), '-aue-', '001')]",
+            "hubName": "[concat('vnet-','hub-', variables('enviroName'), '-aue-', '001')]",
             "vwanName": "[concat('vwan-', variables('enviroName'), '-aue-', '001')]",
-            "azVpnGwIpName": "[concat('gwpip-', variables('enviroName'), '-aue-', '001')]",
-            "azFwIpName": "[concat('fwpip-', variables('enviroName'), '-aue-', '001')]",
-            "identityVnet": "[concat('vnet-', variables('enviroName'), '-aue-', '001')]",
+            "azVpnGwIpName": "[concat('pip-','vgw-', variables('enviroName'), '-aue-', '001')]",
+            "azFwIpName": "[concat('pip-','afw-', variables('enviroName'), '-aue-', '001')]",
+            "identityVnet": "[concat('vnet-','identity-', variables('enviroName'), '-aue-', '001')]",
             "lzVnet": "[concat('vnet-', variables('enviroName'), '-aue-', '001')]"
         },
         // Declaring subscriptionId for AzOps
