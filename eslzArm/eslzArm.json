@@ -842,10 +842,10 @@
             "ddosName": "[concat('ddos-', variables('enviroName'), '-aue-', '001')]",
             "azFwPolicyName": "[concat('afwp-', variables('enviroName'), '-aue-', '001')]",
             "azFwName": "[concat('afw-', variables('enviroName'), '-aue-', '001')]",
-            "azErGwIpName": "[concat('pip-','vgw-', variables('enviroName'), '-aue-', '001')]",
+            "azErGwIpName": "[concat('pip-','vgw-','er-', variables('enviroName'), '-aue-', '001')]",
             "hubName": "[concat('vnet-','hub-', variables('enviroName'), '-aue-', '001')]",
             "vwanName": "[concat('vwan-', variables('enviroName'), '-aue-', '001')]",
-            "azVpnGwIpName": "[concat('pip-','vgw-', variables('enviroName'), '-aue-', '001')]",
+            "azVpnGwIpName": "[concat('pip-','vgw-','vpn-', variables('enviroName'), '-aue-', '001')]",
             "azFwIpName": "[concat('pip-','afw-', variables('enviroName'), '-aue-', '001')]",
             "identityVnet": "[concat('vnet-','identity-', variables('enviroName'), '-aue-', '001')]",
             "lzVnet": "[concat('vnet-', variables('enviroName'), '-aue-', '001')]"
